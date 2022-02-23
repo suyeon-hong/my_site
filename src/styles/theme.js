@@ -10,16 +10,21 @@ const device = {
 
 const colors = {
 	primary: '#1E2022',
-	gray: '#52616B',
+	darkGray: '#52616B',
 	lightGray: '#C9D6DF',
 	white: '#F0F5F9',
 	orange: '#FF5722',
 	blue: '#00ADB5',
 }
 
+const base = {
+	padding: 10,
+}
+
 const theme = {
 	breakPoint,
 	device,
 	colors,
+	base,
 }
 export default theme

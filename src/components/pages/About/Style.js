@@ -23,9 +23,10 @@ export const ImgBox = styled.div`
 	border-radius: 50%;
 	overflow: hidden;
 	box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.15);
-`
 
-export const TextBox = styled.div`
-	font-size: 20px;
-	line-height: 2;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 `

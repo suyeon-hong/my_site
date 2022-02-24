@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import figureImg from 'assets/images/figure.jpg'
+import { figure } from 'assets/images'
 
 export const Figure = styled.figure`
 	width: 100%;
@@ -8,7 +8,7 @@ export const Figure = styled.figure`
 	justify-content: center;
 	align-items: flex-start;
 	position: relative;
-	background: url(${figureImg}) no-repeat center/cover;
+	background: url(${figure}) no-repeat center/cover;
 	padding-top: 250px;
 `
 

@@ -7,7 +7,7 @@ export default function Footer() {
 			<S.FooterInner>
 				<S.IconContainer>
 					<li>
-						<a href="https://github.com/suyeon-hong" target="_blank">
+						<a href="https://github.com/suyeon-hong" target="_blank" rel="noopener noreferrer">
 							<FaGithubAlt />
 						</a>
 					</li>

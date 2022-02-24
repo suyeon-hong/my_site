@@ -14,3 +14,10 @@ export const hideScrollbar = `
 			display: none; /* Chrome, Safari, Opera*/
 		}
 `
+
+export const pageInner = `
+	max-width: 1024px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 100px 30px;
+`

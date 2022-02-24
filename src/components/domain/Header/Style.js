@@ -1,11 +1,9 @@
 import styled from 'styled-components'
-import { removeTextCursor } from 'styles/CommonStyle'
 
 export const Header = styled.header`
 	width: 100%;
 	height: 80px;
 	background-color: ${({ theme }) => theme.colors.white};
-	${removeTextCursor};
 
 	@media ${({ theme }) => theme.device.mobile} {
 		height: auto;

@@ -1,9 +1,8 @@
 import styled from 'styled-components'
-import { pageInner } from 'styles/CommonStyle'
+import { pageWrapper, pageInner } from 'styles/CommonStyle'
 
 export const PageWrapper = styled.main`
-	width: 100%;
-	height: calc(100vh - 200px);
+	${pageWrapper};
 `
 
 export const PageInner = styled.div`

@@ -1,9 +1,8 @@
 import styled from 'styled-components'
-import { hideScrollbar } from 'styles/CommonStyle'
+import { hideScrollbar, pageWrapper } from 'styles/CommonStyle'
 
 export const PageWrapper = styled.main`
-	width: 100%;
-	height: calc(100vh - 200px);
+	${pageWrapper}
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

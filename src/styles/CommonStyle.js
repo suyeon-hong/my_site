@@ -15,6 +15,11 @@ export const hideScrollbar = `
 		}
 `
 
+export const pageWrapper = `
+	width: 100%;
+	min-height: calc(100vh - 200px);
+`
+
 export const pageInner = `
 	max-width: 1024px;
 	height: 100%;

@@ -5,6 +5,7 @@ export const PageWrapper = styled.main`
 	width: 100%;
 	height: calc(100vh - 200px);
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 `

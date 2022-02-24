@@ -1,6 +1,7 @@
 import * as S from './Style'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import { Title } from 'components/base'
 
 export default function Contact() {
 	const form = useRef()
@@ -24,6 +25,7 @@ export default function Contact() {
 
 	return (
 		<S.PageWrapper>
+			<Title>Contact Me.</Title>
 			<S.Form ref={form} onSubmit={sendEmail}>
 				<S.InputWrapper>
 					<label htmlFor="name">Name</label>

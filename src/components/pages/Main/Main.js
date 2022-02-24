@@ -3,7 +3,7 @@ import { useState } from 'react'
 import * as S from './Style'
 
 export default function Main() {
-	const INTRO_TEXT = '안녕하세요. 신입 프론트엔드 개발자 홍수연 입니다.'
+	const INTRO_TEXT = '안녕하세요. 프론트엔드 개발자 홍수연 입니다.'
 	const [text, setText] = useState('')
 	const [count, setCount] = useState(0)
 

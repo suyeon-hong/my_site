@@ -1,13 +1,22 @@
 import * as S from './Style'
 import { Title } from 'components/base'
 import { ProfileBox } from 'components/domain'
+import { FaPenNib, FaGithubAlt } from 'react-icons/fa'
 
 const profileInfo = {
-	links: {
-		github: 'https://github.com/suyeon-hong',
-		blog: 'https://velog.io/@suyeon-hong',
-	},
-	desc: [
+	icons: [
+		{
+			link: 'https://github.com/suyeon-hong',
+			name: 'github',
+			IconName: FaGithubAlt,
+		},
+		{
+			link: 'https://velog.io/@suyeon-hong',
+			name: 'blog',
+			IconName: FaPenNib,
+		},
+	],
+	text: [
 		'성실하고 꾸준합니다.',
 		'균형있는 삶을 지향합니다.',
 		'운동을 하며 스트레스를 해소합니다.',

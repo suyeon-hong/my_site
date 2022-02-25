@@ -17,6 +17,7 @@ export const Menu = styled.li`
 		font-size: 16px;
 		padding: 10px 20px;
 		transition: 0.2s ease;
+		color: ${({ theme }) => theme.colors.darkGray};
 
 		@media ${({ theme }) => theme.device.mobile} {
 			font-size: 14px;

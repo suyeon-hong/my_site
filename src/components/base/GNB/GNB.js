@@ -1,15 +1,18 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
 import * as S from './Style'
 
-const MENU = ['ABOUT', 'SKILLS', 'PORTFOLIO', 'CONTACT']
+GNB.propTypes = {
+	menuList: PropTypes.array.isRequired,
+}
 
-export default function GNB() {
+export default function GNB({ menuList }) {
 	return (
 		<S.MenuContainer>
-			{MENU &&
+			{menuList &&
 				React.Children.toArray(
-					MENU.map(name => (
+					menuList.map(name => (
 						<S.Menu>
 							<NavLink activeclassname="active" to={`/${name.toLowerCase()}`}>
 								{name}

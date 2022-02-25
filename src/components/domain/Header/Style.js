@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { pageInner } from 'styles/CommonStyle'
 
 export const Header = styled.header`
 	width: 100%;
@@ -11,9 +12,7 @@ export const Header = styled.header`
 `
 
 export const HeaderInner = styled.div`
-	max-width: ${({ theme }) => theme.breakPoint.tablet};
-	height: 100%;
-	margin: 0 auto;
+	${pageInner};
 	padding: 0 30px;
 	display: flex;
 	justify-content: space-between;
@@ -24,7 +23,7 @@ export const HeaderInner = styled.div`
 	}
 `
 
-export const Title = styled.h1`
+export const Logo = styled.h1`
 	font-size: 22px;
 	font-weight: 700;
 `

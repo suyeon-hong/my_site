@@ -25,34 +25,36 @@ export default function Contact() {
 
 	return (
 		<S.PageWrapper>
-			<Title>Contact Me.</Title>
-			<S.Form ref={form} onSubmit={sendEmail}>
-				<S.InputWrapper>
-					<label htmlFor="name">Name</label>
-					<input
-						name="name"
-						id="name"
-						type="text"
-						placeholder="이름을 입력해 주세요"
-						maxLength={10}
-					/>
-				</S.InputWrapper>
-				<S.InputWrapper>
-					<label htmlFor="email">E-mail</label>
-					<input
-						name="email"
-						id="email"
-						type="email"
-						placeholder="이메일 주소를 입력해 주세요"
-						required
-					/>
-				</S.InputWrapper>
-				<S.InputWrapper>
-					<label htmlFor="message">Message</label>
-					<textarea name="message" id="message" placeholder="메세지를 입력해 주세요" required />
-				</S.InputWrapper>
-				<button type="submit">Send</button>
-			</S.Form>
+			<S.PageInner>
+				<Title>Contact Me.</Title>
+				<S.Form ref={form} onSubmit={sendEmail}>
+					<S.InputWrapper>
+						<label htmlFor="name">Name</label>
+						<input
+							name="name"
+							id="name"
+							type="text"
+							placeholder="이름을 입력해 주세요"
+							maxLength={10}
+						/>
+					</S.InputWrapper>
+					<S.InputWrapper>
+						<label htmlFor="email">E-mail</label>
+						<input
+							name="email"
+							id="email"
+							type="email"
+							placeholder="이메일 주소를 입력해 주세요"
+							required
+						/>
+					</S.InputWrapper>
+					<S.InputWrapper>
+						<label htmlFor="message">Message</label>
+						<textarea name="message" id="message" placeholder="메세지를 입력해 주세요" required />
+					</S.InputWrapper>
+					<button type="submit">Send</button>
+				</S.Form>
+			</S.PageInner>
 		</S.PageWrapper>
 	)
 }

@@ -17,7 +17,7 @@ export const hideScrollbar = `
 
 export const pageWrapper = `
 	width: 100%;
-	min-height: calc(100vh - 200px);
+	min-height: calc(100vh - 160px);
 `
 
 export const pageInner = `

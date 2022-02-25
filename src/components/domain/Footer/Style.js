@@ -1,16 +1,15 @@
 import styled from 'styled-components'
+import { pageInner } from 'styles/CommonStyle'
 
 export const Footer = styled.footer`
 	width: 100%;
-	height: 120px;
+	height: 80px;
 	background-color: ${({ theme }) => theme.colors.darkGray};
 `
 
 export const FooterInner = styled.div`
-	max-width: ${({ theme }) => theme.breakPoint.tablet};
-	height: 100%;
-	margin: 0 auto;
-	text-align: center;
+	${pageInner};
+	padding: 0 30px;
 	color: ${({ theme }) => theme.colors.white};
 	display: flex;
 	flex-direction: column;

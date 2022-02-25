@@ -3,13 +3,13 @@ import { figure } from 'assets/images'
 
 export const Figure = styled.figure`
 	width: 100%;
-	height: calc(100vh - 200px);
+	height: calc(100vh - 80px);
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	position: relative;
 	background: url(${figure}) no-repeat center/cover;
-	padding-top: 250px;
+	padding-top: 300px;
 `
 
 const cursor = keyframes`

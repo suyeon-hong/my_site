@@ -1,8 +1,11 @@
 import styled from 'styled-components'
-import { hideScrollbar, pageWrapper } from 'styles/CommonStyle'
+import { hideScrollbar, pageInner, pageWrapper } from 'styles/CommonStyle'
 
 export const PageWrapper = styled.main`
 	${pageWrapper}
+`
+export const PageInner = styled.div`
+	${pageInner};
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

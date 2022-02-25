@@ -16,7 +16,7 @@ export const ContentBox = styled.div`
 export const IconBox = styled.div`
 	display: flex;
 	justify-content: center;
-	margin-bottom: ${({ theme }) => `${theme.base.padding * 3}px`};
+	margin-bottom: ${({ theme }) => `${theme.base.padding * 5}px`};
 	gap: ${({ theme }) => `${theme.base.padding}px`};
 
 	img {

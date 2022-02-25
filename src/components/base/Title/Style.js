@@ -5,5 +5,5 @@ export const Title = styled.h1`
 	font-weight: 600;
 	letter-spacing: 1px;
 	text-align: center;
-	margin-bottom: ${({ theme }) => `${theme.base.padding * 7}px`};
+	margin-bottom: ${({ theme }) => `${theme.base.padding * 10}px`};
 `

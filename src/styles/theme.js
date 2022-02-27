@@ -13,7 +13,7 @@ const colors = {
 	darkGray: '#52616B',
 	lightGray: '#C9D6DF',
 	white: '#F0F5F9',
-	orange: '#FF5722',
+	point: '#5D8BF4',
 	blue: '#00ADB5',
 }
 

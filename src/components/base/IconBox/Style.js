@@ -20,7 +20,7 @@ export const IconBox = styled.div`
 		}
 		&:hover {
 			transform: translateY(-5px);
-			color: ${({ theme }) => theme.colors.primary};
+			color: ${({ theme }) => theme.colors.point};
 		}
 	}
 `

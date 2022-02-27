@@ -3,7 +3,7 @@ import { figure } from 'assets/images'
 
 export const Figure = styled.figure`
 	width: 100%;
-	height: calc(100vh - 80px);
+	height: calc(100vh - 160px);
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;

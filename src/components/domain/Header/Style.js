@@ -26,6 +26,11 @@ export const HeaderInner = styled.div`
 export const Logo = styled.h1`
 	font-size: 22px;
 	font-weight: 700;
+	color: ${({ theme }) => theme.colors.darkGray};
+
+	.active {
+		color: ${({ theme }) => theme.colors.point};
+	}
 `
 
 export const Br = styled.br`

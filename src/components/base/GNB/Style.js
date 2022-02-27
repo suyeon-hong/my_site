@@ -27,6 +27,6 @@ export const Menu = styled.li`
 
 	&:hover a,
 	.active {
-		color: ${({ theme }) => theme.colors.orange};
+		color: ${({ theme }) => theme.colors.point};
 	}
 `

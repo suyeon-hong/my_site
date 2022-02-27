@@ -1,6 +1,6 @@
 import * as S from './Style'
 import { GNB } from 'components/base'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const MENU = ['ABOUT', 'SKILLS', 'PORTFOLIO', 'CONTACT']
 
@@ -9,10 +9,10 @@ export default function Header() {
 		<S.Header>
 			<S.HeaderInner>
 				<S.Logo>
-					<Link to="/">
+					<NavLink to="/" activeclassname="active">
 						HONG <S.Br />
 						SUYEON
-					</Link>
+					</NavLink>
 				</S.Logo>
 				<GNB menuList={MENU} />
 			</S.HeaderInner>

@@ -8,8 +8,7 @@ export const PageInner = styled.div`
 	${pageInner};
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	gap: ${({ theme }) => `${theme.base.padding * 5}px`};
 `
 
 export const Form = styled.form`
@@ -38,17 +37,20 @@ export const Form = styled.form`
 `
 
 export const InputWrapper = styled.div`
+	width: 100%;
 	display: flex;
 	align-items: center;
-	gap: ${({ theme }) => `${theme.base.padding * 2}px`};
+	justify-content: space-between;
+	gap: ${({ theme }) => `0 ${theme.base.padding}px`};
 
 	label {
 		font-size: 18px;
+		flex: 0 0 auto;
 	}
 
 	input,
 	textarea {
-		width: 60vw;
+		width: 90%;
 		height: 50px;
 		border-bottom: 1px solid ${({ theme }) => theme.colors.lightGray};
 		padding: ${({ theme }) => `0 ${theme.base.padding}px`};

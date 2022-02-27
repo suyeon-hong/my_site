@@ -18,11 +18,12 @@ export default function Skills() {
 						<img src={sass} alt="sass_icon" />
 					</S.IconBox>
 					<div>
-						<TextWithCheck>웹표준, 웹접근성을 고려한 시멘틱 작업 가능</TextWithCheck>
-						<TextWithCheck>반응형 웹 사이트 제작 가능</TextWithCheck>
-						<TextWithCheck>API 데이터 작업 가능</TextWithCheck>
-						<TextWithCheck>React 활용 웹 사이트 제작 가능</TextWithCheck>
-						<TextWithCheck>크로스브라우징</TextWithCheck>
+						<TextWithCheck>React를 이용한 웹 사이트 제작이 가능합니다.</TextWithCheck>
+						<TextWithCheck>API 데이터를 활용한 작업이 가능합니다.</TextWithCheck>
+						<TextWithCheck>반응형 웹 사이트 제작이 가능합니다.</TextWithCheck>
+						<TextWithCheck>웹표준, 웹접근성을 고려한 시멘틱 작업이 가능합니다.</TextWithCheck>
+						<TextWithCheck>크로스브라우징을 고려한 작업이 가능합니다.</TextWithCheck>
+						<TextWithCheck>j-Query, JavaScript를 활용한 모션작업이 가능합니다.</TextWithCheck>
 					</div>
 				</S.ContentBox>
 			</S.PageInner>

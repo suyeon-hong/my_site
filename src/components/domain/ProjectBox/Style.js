@@ -40,9 +40,18 @@ export const ImgBox = styled.div`
 	flex: 0 0 auto;
 	overflow: hidden;
 
-	img {
+	img,
+	video {
 		width: 100%;
 		object-fit: contain;
+	}
+	video {
+		height: 100%;
+	}
+
+	@media ${({ theme }) => theme.device.mobile} {
+		width: 100%;
+		height: 300px;
 	}
 `
 export const ArticleBox = styled.article`
@@ -61,6 +70,11 @@ export const ArticleBox = styled.article`
 		img {
 			animation: ${scroll} 5s ease;
 		}
+	}
+
+	@media ${({ theme }) => theme.device.mobile} {
+		flex-direction: column;
+		gap: ${({ theme }) => `${theme.base.padding * 2}px`};
 	}
 `
 

@@ -5,16 +5,30 @@ import { TextWithCheck } from 'components/base'
 import { IconBox } from 'components/base'
 
 ProjectBox.propTypes = {
-	projectInfo: PropTypes.array.isRequired,
+	projectInfo: PropTypes.object.isRequired,
 }
 
 export default function ProjectBox({ projectInfo }) {
-	const { title, imgSrc, icons, text } = projectInfo
+	const { title, imgSrc, vidSrc, icons, text } = projectInfo
+
+	const handelMouseEnter = e => {
+		const target = e.target.querySelector('video')
+		target !== null && target.play()
+	}
+
+	const handelMouseLeave = e => {
+		const target = e.target.querySelector('video')
+
+		if (target !== null) {
+			target.pause()
+			target.load()
+		}
+	}
 
 	return (
-		<S.ArticleBox>
+		<S.ArticleBox onMouseEnter={handelMouseEnter} onMouseLeave={handelMouseLeave}>
 			<S.ImgBox>
-				<img src={imgSrc} alt="" />
+				{imgSrc ? <img src={imgSrc} alt={title} /> : <video src={vidSrc} alt={title} muted />}
 			</S.ImgBox>
 			<S.ContentBox>
 				<S.Titile>

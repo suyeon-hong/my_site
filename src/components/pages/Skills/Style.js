@@ -7,6 +7,9 @@ export const PageWrapper = styled.main`
 
 export const PageInner = styled.div`
 	${pageInner}
+	display: flex;
+	flex-direction: column;
+	gap: ${({ theme }) => `${theme.base.padding * 10}px`};
 `
 
 export const ContentBox = styled.div`

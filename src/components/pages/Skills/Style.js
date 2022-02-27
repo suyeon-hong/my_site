@@ -31,5 +31,9 @@ export const IconBox = styled.div`
 		&:hover {
 			transform: scale(1.05) translateY(-5px);
 		}
+		@media ${({ theme }) => theme.device.mobile} {
+			width: 10vw;
+			height: 60px;
+		}
 	}
 `

@@ -5,6 +5,10 @@ export const ProfileBox = styled.section`
 	justify-content: center;
 	align-items: center;
 	gap: ${({ theme }) => `${theme.base.padding * 10}px`};
+
+	@media ${({ theme }) => theme.device.mobile} {
+		flex-direction: column;
+	}
 `
 
 export const ImgBox = styled.div`

@@ -1,7 +1,55 @@
 import { FaGithub, FaStar } from 'react-icons/fa'
-import { web1, web2, grid, shoppingmall, todolist } from 'assets/images'
+import { kkukka, nutrition, web1, web2, grid, shoppingmall, todolist } from 'assets/images'
 
 export const portfolioInfo = [
+	{
+		title: '모바일 웹 클론',
+		vidSrc: kkukka,
+		icons: [
+			{
+				link: 'https://github.com/suyeon-hong/3week_ncnc',
+				name: '코드보기',
+				IconName: FaGithub,
+			},
+			{
+				link: 'https://3week-ncnc.vercel.app/',
+				name: '사이트보기',
+				IconName: FaStar,
+			},
+		],
+		text: [
+			'HTML / styled-components / nextJs 사용',
+			'4인 팀으로 진행된 팀 협업 프로젝트',
+			'Items 페이지 구현',
+			'CategoryList 재사용가능한 컴포넌트 구현',
+			'OptionBox 컴포넌트, 모달기능, warning데이터 내용 분리 및 수정하는 기능 구현',
+			'반응형 구현',
+		],
+	},
+	{
+		title: '영양제 검색 사이트',
+		vidSrc: nutrition,
+		icons: [
+			{
+				link: 'https://github.com/suyeon-hong/3week_SearchFilter',
+				name: '코드보기',
+				IconName: FaGithub,
+			},
+			{
+				link: 'https://wanted-team2.netlify.app/',
+				name: '사이트보기',
+				IconName: FaStar,
+			},
+		],
+		text: [
+			'HTML / styled-components / nextJs 사용',
+			'3인 팀으로 진행된 팀 협업 프로젝트',
+			'TagList, Tag 컴포넌트 - 토글기능 구현',
+			'Input, ResetBtn 컴포넌트 구현',
+			'Main 컴포넌트에 domain 컴포넌트 병합 및 UI 수정',
+			'반응형 구현',
+		],
+	},
 	{
 		title: '기업형 웹사이트',
 		imgSrc: web1,
@@ -85,7 +133,7 @@ export const portfolioInfo = [
 			},
 		],
 		text: [
-			'HTML / CSS / React / TypeScript 사용',
+			'HTML / CSS / ReactTs 사용',
 			'TypeScript 기반으로 제작된 투두리스트',
 			'localStrage를 이용해 새로고침 시에도 리스트 저장',
 			'반응형 구현',

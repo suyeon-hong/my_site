@@ -15,7 +15,7 @@ export default function ProfileBox({ profileInfo }) {
 			<S.ImgBox />
 			<div>
 				<IconBox icons={icons} />
-				{text && React.Children.toArray(text.map(el => <TextWithCheck children={el} />))}
+				{text && text.map((el, index) => <TextWithCheck key={index} children={el} />)}
 			</div>
 		</S.ProfileBox>
 	)

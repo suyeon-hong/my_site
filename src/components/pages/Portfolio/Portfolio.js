@@ -105,9 +105,9 @@ export default function Portfolio() {
 				<Title>Portfolio.</Title>
 				<section>
 					{portfolioInfo &&
-						React.Children.toArray(
-							portfolioInfo.map(projectInfo => <ProjectBox projectInfo={projectInfo} />),
-						)}
+						portfolioInfo.map((projectInfo, index) => (
+							<ProjectBox key={index} projectInfo={projectInfo} />
+						))}
 				</section>
 			</S.PageInner>
 		</S.PageWrapper>

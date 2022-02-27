@@ -11,15 +11,13 @@ export default function GNB({ menuList }) {
 	return (
 		<S.MenuContainer>
 			{menuList &&
-				React.Children.toArray(
-					menuList.map(name => (
-						<S.Menu>
-							<NavLink activeclassname="active" to={`/${name.toLowerCase()}`}>
-								{name}
-							</NavLink>
-						</S.Menu>
-					)),
-				)}
+				menuList.map((name, index) => (
+					<S.Menu key={index}>
+						<NavLink activeclassname="active" to={`/${name.toLowerCase()}`}>
+							{name}
+						</NavLink>
+					</S.Menu>
+				))}
 		</S.MenuContainer>
 	)
 }

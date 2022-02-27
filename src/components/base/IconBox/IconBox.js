@@ -5,14 +5,12 @@ export default function IconBox({ icons }) {
 	return (
 		<S.IconBox>
 			{icons &&
-				React.Children.toArray(
-					icons.map(icon => (
-						<a href={icon.link} target="_blank" rel="noreferrer">
-							<icon.IconName />
-							<span>{icon.name}</span>
-						</a>
-					)),
-				)}
+				icons.map((icon, index) => (
+					<a key={index} href={icon.link} target="_blank" rel="noreferrer">
+						<icon.IconName />
+						<span>{icon.name}</span>
+					</a>
+				))}
 		</S.IconBox>
 	)
 }

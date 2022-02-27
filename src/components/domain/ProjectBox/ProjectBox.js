@@ -35,7 +35,7 @@ export default function ProjectBox({ projectInfo }) {
 					<span>{title}</span>
 				</S.Titile>
 				<IconBox icons={icons} />
-				{text && React.Children.toArray(text.map(el => <TextWithCheck children={el} size={18} />))}
+				{text && text.map((el, index) => <TextWithCheck key={index} children={el} size={18} />)}
 			</S.ContentBox>
 		</S.ArticleBox>
 	)

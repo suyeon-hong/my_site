@@ -1,8 +1,14 @@
 # 포트폴리오 사이트
 
-### 🚀 [배포사이트](https://suyeon-hong.netlify.app)
+#### 🚀 [배포사이트](https://suyeon-hong.netlify.app)
 
-### 구현내용
+---
+
+#### - MAIN 페이지
+
+- [x] 타이포모션
+- [x] 프로젝트 소개
+
 #### - ABOUT 페이지
 
 - [x] 깃허브 프로필, 블로그 링크 연결

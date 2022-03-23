@@ -10,7 +10,13 @@ export const Figure = styled.figure`
 	align-items: flex-start;
 	position: relative;
 	background: url(${figure}) no-repeat center/cover;
+	padding: 0 30px;
 	padding-top: 300px;
+
+	@media ${({ theme }) => theme.device.mobile} {
+		height: 350px;
+		padding-top: 100px;
+	}
 `
 
 const cursor = keyframes`
@@ -35,6 +41,10 @@ export const TextWrapper = styled.div`
 		animation: ${cursor} 0.8s infinite;
 		vertical-align: sub;
 		margin-left: ${({ theme }) => `${theme.base.padding / 2}px`};
+	}
+
+	@media ${({ theme }) => theme.device.mobile} {
+		font-size: 14px;
 	}
 `
 

@@ -9,7 +9,7 @@ export const Titile = styled.h2`
 		content: '';
 		display: block;
 		width: 105%;
-		height: 12px;
+		height: 60%;
 		background: ${({ theme }) => theme.colors.lightGray};
 		position: absolute;
 		left: -2px;
@@ -20,6 +20,14 @@ export const Titile = styled.h2`
 		font-weight: bold;
 		position: relative;
 		z-index: 1;
+	}
+
+	@media ${({ theme }) => theme.device.mobile} {
+		margin-bottom: ${({ theme }) => `${theme.base.padding * 2}px`};
+
+		span {
+			font-size: 14px;
+		}
 	}
 `
 
@@ -50,9 +58,9 @@ export const ImgBox = styled.div`
 		height: 100%;
 	}
 
-	@media ${({ theme }) => theme.device.mobile} {
+	@media ${({ theme }) => theme.device.tablet} {
 		width: 100%;
-		height: 300px;
+		height: 200px;
 	}
 `
 export const ArticleBox = styled.article`
@@ -73,12 +81,18 @@ export const ArticleBox = styled.article`
 		}
 	}
 
-	@media ${({ theme }) => theme.device.mobile} {
+	@media ${({ theme }) => theme.device.tablet} {
 		flex-direction: column;
-		gap: ${({ theme }) => `${theme.base.padding * 2}px`};
+		gap: ${({ theme }) => `${theme.base.padding * 3}px`};
+		padding: ${({ theme }) => `${theme.base.padding * 2}px`};
+		margin-bottom: ${({ theme }) => `${theme.base.padding * 5}px`};
 	}
 `
 
 export const ContentBox = styled.div`
-	padding-top: ${({ theme }) => `${theme.base.padding * 3}px`};
+	padding-top: ${({ theme }) => `${theme.base.padding * 5}px`};
+
+	@media ${({ theme }) => theme.device.desktop} {
+		padding-top: 0px;
+	}
 `

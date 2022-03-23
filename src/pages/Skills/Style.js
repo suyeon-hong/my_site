@@ -10,6 +10,10 @@ export const PageInner = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: ${({ theme }) => `${theme.base.padding * 10}px`};
+
+	@media ${({ theme }) => theme.device.mobile} {
+		gap: ${({ theme }) => `${theme.base.padding * 5}px`};
+	}
 `
 
 export const ContentBox = styled.div`
@@ -31,9 +35,12 @@ export const IconBox = styled.div`
 		&:hover {
 			transform: scale(1.05) translateY(-5px);
 		}
-		@media ${({ theme }) => theme.device.mobile} {
+		@media ${({ theme }) => theme.device.tablet} {
 			width: 10vw;
 			height: 60px;
 		}
+	}
+	@media ${({ theme }) => theme.device.mobile} {
+		margin-bottom: ${({ theme }) => `${theme.base.padding * 3}px`};
 	}
 `

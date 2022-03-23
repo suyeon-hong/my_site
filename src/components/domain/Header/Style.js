@@ -6,7 +6,7 @@ export const Header = styled.header`
 	height: 80px;
 	background-color: ${({ theme }) => theme.colors.white};
 
-	@media ${({ theme }) => theme.device.mobile} {
+	@media ${({ theme }) => theme.device.tablet} {
 		height: auto;
 	}
 `
@@ -18,7 +18,7 @@ export const HeaderInner = styled.div`
 	justify-content: space-between;
 	align-items: center;
 
-	@media ${({ theme }) => theme.device.mobile} {
+	@media ${({ theme }) => theme.device.tablet} {
 		padding: 20px;
 	}
 `
@@ -36,7 +36,7 @@ export const Logo = styled.h1`
 export const Br = styled.br`
 	display: none;
 
-	@media ${({ theme }) => theme.device.mobile} {
+	@media ${({ theme }) => theme.device.tablet} {
 		display: block;
 	}
 `

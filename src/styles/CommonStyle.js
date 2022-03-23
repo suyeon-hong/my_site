@@ -25,4 +25,8 @@ export const pageInner = `
 	height: 100%;
 	margin: 0 auto;
 	padding: 100px 30px;
+
+	@media ${({ theme }) => theme.device.mobile} {
+		padding: 50px 20px;
+	}
 `

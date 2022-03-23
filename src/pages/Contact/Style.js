@@ -69,4 +69,18 @@ export const InputWrapper = styled.div`
 		resize: none;
 		${hideScrollbar};
 	}
+
+	@media ${({ theme }) => theme.device.mobile} {
+		flex-direction: column;
+		align-items: flex-start;
+
+		label {
+			margin-bottom: 10px;
+		}
+
+		input,
+		textarea {
+			width: 100%;
+		}
+	}
 `

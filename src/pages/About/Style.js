@@ -10,4 +10,8 @@ export const PageInner = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: ${({ theme }) => `${theme.base.padding * 10}px`};
+
+	@media ${({ theme }) => theme.device.mobile} {
+		gap: ${({ theme }) => `${theme.base.padding * 5}px`};
+	}
 `

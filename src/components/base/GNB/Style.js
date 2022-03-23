@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const MenuContainer = styled.ul`
 	display: flex;
 
-	@media ${({ theme }) => theme.device.mobile} {
+	@media ${({ theme }) => theme.device.tablet} {
 		flex-direction: column;
 		text-align: right;
 	}
@@ -19,7 +19,7 @@ export const Menu = styled.li`
 		transition: 0.2s ease;
 		color: ${({ theme }) => theme.colors.darkGray};
 
-		@media ${({ theme }) => theme.device.mobile} {
+		@media ${({ theme }) => theme.device.tablet} {
 			font-size: 14px;
 			padding: 10px 0;
 		}

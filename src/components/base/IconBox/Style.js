@@ -23,4 +23,16 @@ export const IconBox = styled.div`
 			color: ${({ theme }) => theme.colors.point};
 		}
 	}
+
+	@media ${({ theme }) => theme.device.mobile} {
+		margin-bottom: ${({ theme }) => `${theme.base.padding}px`};
+
+		a {
+			font-size: 14px;
+
+			svg {
+				font-size: 20px;
+			}
+		}
+	}
 `

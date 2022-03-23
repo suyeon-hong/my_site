@@ -5,4 +5,8 @@ export const Title = styled.h1`
 	font-weight: 600;
 	letter-spacing: 1px;
 	text-align: center;
+
+	@media ${({ theme }) => theme.device.mobile} {
+		font-size: 20px;
+	}
 `

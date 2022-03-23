@@ -6,8 +6,9 @@ export const ProfileBox = styled.section`
 	align-items: center;
 	gap: ${({ theme }) => `${theme.base.padding * 10}px`};
 
-	@media ${({ theme }) => theme.device.mobile} {
+	@media ${({ theme }) => theme.device.tablet} {
 		flex-direction: column;
+		gap: ${({ theme }) => `${theme.base.padding * 5}px`};
 	}
 `
 
@@ -23,5 +24,10 @@ export const ImgBox = styled.div`
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+
+	@media ${({ theme }) => theme.device.mobile} {
+		width: 200px;
+		height: 200px;
 	}
 `

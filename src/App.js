@@ -3,7 +3,7 @@ import GlobalStyles from './styles/GlobalStyle'
 import theme from './styles/theme'
 import { Header, Footer } from 'components/domain'
 import { Routes, Route } from 'react-router-dom'
-import { Main, About, Contact, Skills, Portfolio } from 'components/pages'
+import { Main, About, Contact, Skills, Portfolio } from 'pages'
 
 function App() {
 	return (
